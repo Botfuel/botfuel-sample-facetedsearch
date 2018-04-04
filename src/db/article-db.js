@@ -21,6 +21,7 @@ class ArticleDb extends PlainFacetDb {
         sleave: PlainFacetDb.EQUAL,
         form: PlainFacetDb.EQUAL,
       }),
+      done: hits => hits && hits.length <= 2,
     });
   }
 }

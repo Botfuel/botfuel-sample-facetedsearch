@@ -14,9 +14,9 @@ describe('test bot scenario', () => {
   test('Bot proposes different size options ', async () => {
     const bot = new Bot(config);
     const { userId } = bot.adapter;
-    await bot.play([new UserTextMessage('I want to buy a pull')]);
+    await bot.play([new UserTextMessage('I want to buy a polo')]);
     expect(bot.adapter.log).toEqual([
-      new UserTextMessage('I want to buy a pull'),
+      new UserTextMessage('I want to buy a polo'),
       new BotTextMessage('What is your size?'),
       new QuickrepliesMessage(['S', 'M', 'L', 'XL', 'XXL']),
     ].map(o => o.toJson(userId)));
