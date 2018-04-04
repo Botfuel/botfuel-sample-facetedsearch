@@ -1,5 +1,7 @@
 const _ = require('lodash');
-const { BotTextMessage, Logger, QuickrepliesMessage } = require('botfuel-dialog');
+const {
+  BotTextMessage, Logger, QuickrepliesMessage, WebAdapter,
+} = require('botfuel-dialog');
 const { SearchView } = require('botfuel-module-facetedsearch');
 
 const logger = Logger('ArticleView');
@@ -28,7 +30,7 @@ const getBotResponse = (facet, valueCounts) => {
 
 const articleHtml = (data) => {
   let html = '<div>';
-  html += `<div><img src="${data.image}" style="max-width:100%"/></div>`;
+  html += `<div><img src="${WebAdapter.getStaticUrl(data.image)}" style="max-width:100%"/></div>`;
   html += `<div><strong>${data.brand}</strong> <strong style="float:right">${
     data.price
   } €</strong></div>`;

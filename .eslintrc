@@ -8,31 +8,6 @@
   "parser": "babel-eslint",
   "rules": {
     "class-methods-use-this": "off",
-    "valid-jsdoc": [
-      "error",
-      {
-        "requireReturn": true,
-        "requireReturnType": true,
-        "requireParamDescription": true,
-        "requireReturnDescription": false,
-        "prefer": {
-          "arg": "param",
-          "argument": "param",
-          "class": "constructor",
-          "return": "returns",
-          "virtual": "abstract"
-        }
-      }
-    ],
-    "require-jsdoc": [
-      "error",
-      {
-        "require": {
-          "FunctionDeclaration": true,
-          "MethodDefinition": true,
-          "ClassDeclaration": true
-        }
-      }
-    ]
+    "require-jsdoc": 0
   }
 }
