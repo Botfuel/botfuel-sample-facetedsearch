@@ -1,7 +1,7 @@
 [
   {
     "link": "",
-    "type": "T-shirt",
+    "type": "Polo",
     "brand": "Polo Raph Laurent",
     "color": "White",
     "size": "[S,M,L,XL,XXL]",
@@ -13,7 +13,7 @@
   },
   {
     "link": "",
-    "type": "T-shirt",
+    "type": "Polo",
     "brand": "Lacoste",
     "color": "Red",
     "size": "[S,M,L,XL]",
@@ -25,7 +25,7 @@
   },
   {
     "link": "",
-    "type": "T-shirt",
+    "type": "Polo",
     "brand": "Lacoste",
     "color": "White",
     "size": "[M,L,XL,XXL]",
@@ -37,7 +37,7 @@
   },
   {
     "link": "",
-    "type": "T-shirt",
+    "type": "Polo",
     "brand": "Lacoste",
     "color": "Red",
     "size": "[S,M,L,XL,XXL]",
@@ -49,7 +49,7 @@
   },
   {
     "link": "",
-    "type": "T-shirt",
+    "type": "Polo",
     "brand": "Polo Raph Laurent",
     "color": "White",
     "size": "[S,M,L,XL]",
@@ -61,7 +61,7 @@
   },
   {
     "link": "",
-    "type": "T-shirt",
+    "type": "Polo",
     "brand": "Polo Raph Laurent",
     "color": "Red",
     "size": "[M,L,XL,XXL]",

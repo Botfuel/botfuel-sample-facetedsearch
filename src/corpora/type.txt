@@ -1,2 +1,2 @@
-T-shirt,shirt,shirts,tshirt,tshirts,t-shirts
+Polo,polos
 Jean,jeans
