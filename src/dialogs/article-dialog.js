@@ -4,7 +4,7 @@ const ArticleDb = require('../db/article-db');
 class ArticleDialog extends SearchDialog {}
 
 ArticleDialog.params = {
-  namespace: 'assurance',
+  namespace: 'article',
   db: ArticleDb,
   entities: {
     type: {
