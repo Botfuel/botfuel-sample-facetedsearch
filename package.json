@@ -1,0 +1,35 @@
+{
+  "name": "botfuel-sample-facetedsearch-ecommerce",
+  "version": "0.0.0",
+  "private": true,
+  "author": "Botfuel",
+  "description": "Example using botfuel faceted search module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "start": "botfuel-run",
+    "train": "botfuel-train",
+    "test": "jest"
+  },
+  "dependencies": {
+    "botfuel-dialog": "^5.0.0",
+    "botfuel-module-facetedsearch": "^0.5.0",
+    "lodash": "^4.17.5",
+    "logtown-winston": "^1.0.0",
+    "winston": "^2.4.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "^22.4.3",
+    "eslint": "^4.18.2",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-babel": "^4.1.1",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.13.0",
+    "eslint-plugin-node": "^5.1.0",
+    "jest": "^22.4.2"
+  },
+  "engines": {
+    "node": "8.x"
+  }
+}
