@@ -8,7 +8,7 @@ const colorMap = {
 };
 
 const ColorFilter = (value, param) =>
-  param && colorMap[value].toLowerCase() === param.toLowerCase();
+  param && colorMap[value] && colorMap[value].toLowerCase() === param.toLowerCase();
 
 class ArticleDb extends PlainFacetDb {
   constructor() {
