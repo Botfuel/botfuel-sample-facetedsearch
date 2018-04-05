@@ -20,7 +20,7 @@ yarn install
 Start the bot:
 
 ```bash
-BOTFUEL_APP_TOKEN=<...> BOTFUEL_APP_ID=<...> BOTFUEL_APP_KEY=<...> yarn start dev-config.js
+BOTFUEL_APP_TOKEN=<...> BOTFUEL_APP_ID=<...> BOTFUEL_APP_KEY=<...> yarn start shell-config.js
 ```
 
 If you set your app credentials right, you should see:
