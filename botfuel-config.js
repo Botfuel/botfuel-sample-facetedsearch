@@ -2,7 +2,7 @@ module.exports = {
   adapter: {
     name: 'botfuel',
   },
-  logger: 'custom-logger',
+  logger: 'info',
   brain: {
     name: 'memory',
   },
