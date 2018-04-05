@@ -1,13 +1,3 @@
-# Example bot using faceted search module
+# Sample bot used for demoing [FacetedSearch module](https://docs.botfuel.io/dialog/modules/faceted-search)
 
-## install
-
-yarn install
-
-## run
-
-BOTFUEL_APP_TOKEN=<...> BOTFUEL_APP_ID=<...> BOTFUEL_APP_KEY=<...> yarn start
-
-## test
-
-BOTFUEL_APP_TOKEN=<...> BOTFUEL_APP_ID=<...> BOTFUEL_APP_KEY=<...> yarn test
+TODO: fix README according to other samples
