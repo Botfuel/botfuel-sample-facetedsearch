@@ -7,23 +7,19 @@ const colorMap = {
   FFFFFF: 'White',
 };
 
-const ColorFilter = (value, param) =>
-  param && colorMap[value] && colorMap[value].toLowerCase() === param.toLowerCase();
+const metaData = {
+  filter: PlainFacetDb.DEFAULTFILTER({
+    type: PlainFacetDb.EQUAL,
+    brand: PlainFacetDb.EQUAL,
+    color: (value, param) =>
+      param && colorMap[value] && colorMap[value].toLowerCase() === param.toLowerCase(),
+    size: PlainFacetDb.IN,
+    sleave: PlainFacetDb.EQUAL,
+    form: PlainFacetDb.EQUAL,
+  }),
+  done: hits => hits && hits.length <= 2,
+};
 
-class ArticleDb extends PlainFacetDb {
-  constructor() {
-    super(data, {
-      filter: PlainFacetDb.DEFAULTFILTER({
-        type: PlainFacetDb.EQUAL,
-        brand: PlainFacetDb.EQUAL,
-        color: ColorFilter,
-        size: PlainFacetDb.IN,
-        sleave: PlainFacetDb.EQUAL,
-        form: PlainFacetDb.EQUAL,
-      }),
-      done: hits => hits && hits.length <= 2,
-    });
-  }
-}
+const ArticleDb = new PlainFacetDb(data, metaData);
 
-module.exports = new ArticleDb();
+module.exports = ArticleDb;
