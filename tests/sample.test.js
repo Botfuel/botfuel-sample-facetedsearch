@@ -37,4 +37,27 @@ describe('test bot scenario', () => {
       new BotTextMessage("Sorry we don't find any result!"),
     ].map(o => o.toJson(userId)));
   });
+
+  test('Bot should start new conversation on hello', async () => {
+    const bot = new Bot(config);
+    const { userId } = bot.adapter;
+    await bot.play([
+      new UserTextMessage('I want to buy a Lacoste polo of size M'),
+      new UserTextMessage('Blue'),
+      new UserTextMessage('Hello'),
+      new UserTextMessage('I want to buy a Lacoste polo'),
+    ]);
+    expect(bot.adapter.log).toEqual([
+      new UserTextMessage('I want to buy a Lacoste polo of size M'),
+      new BotTextMessage('What color do you like?'),
+      new QuickrepliesMessage(['Red', 'White']),
+      new UserTextMessage('Blue'),
+      new BotTextMessage("Sorry we don't find any result!"),
+      new UserTextMessage('Hello'),
+      new BotTextMessage('Hello!'),
+      new UserTextMessage('I want to buy a Lacoste polo'),
+      new BotTextMessage('What is your size?'),
+      new QuickrepliesMessage(['S', 'M', 'L', 'XL', 'XXL']),
+    ].map(o => o.toJson(userId)));
+  });
 });

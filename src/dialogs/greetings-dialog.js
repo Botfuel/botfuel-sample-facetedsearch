@@ -9,20 +9,16 @@ class Greetings extends TextDialog {
     const greetings = (await this.brain.userGet(userId, 'greetings')) || {
       greeted: false,
     };
+
+    if (!greetings.greeted) {
+      await this.brain.userSet(userId, 'greetings', { greeted: true });
+    }
+
     return greetings;
   }
 
-  async dialogWillComplete(userMessage) {
-    const userId = userMessage.user;
-    const greetings = (await this.brain.userGet(userId, 'greetings')) || {
-      greeted: false,
-    };
-    if (greetings.greeted) {
-      return this.startNewConversation();
-    }
-
-    await this.brain.userSet(userId, 'greetings', { greeted: true });
-    return null;
+  async dialogWillComplete() {
+    return this.startNewConversation();
   }
 }
 
