@@ -1,6 +1,4 @@
-# Sample bot used for demoing [FacetedSearch module](https://docs.botfuel.io/dialog/modules/faceted-search)
-
-This sample bot is used in the [**FacetedSearch demo**](http://docs.botfuel.io/dialog/demos/faceted-search).
+# Sample bot used in the [FacetedSearch module](https://docs.botfuel.io/dialog/modules/faceted-search)
 
 ## How to run the bot
 
