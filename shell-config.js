@@ -6,7 +6,6 @@ module.exports = {
   brain: {
     name: 'memory',
   },
-  logger: 'custom-logger',
   modules: ['botfuel-module-facetedsearch'],
   path: __dirname,
 };
