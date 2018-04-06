@@ -1,5 +1,5 @@
 const { SearchDialog } = require('botfuel-module-facetedsearch');
-const ArticleDb = require('../db/article-db');
+const ArticleDb = require('../dbs/article-db');
 
 class ArticleDialog extends SearchDialog {}
 
