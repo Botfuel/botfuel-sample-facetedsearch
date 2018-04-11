@@ -74,7 +74,7 @@
   {
     "link":
       "https://www.galerieslafayette.com/p/jeans+calvin+klein+jeans+slim+fit-calvin+klein/46466745/230",
-    "type": "Jean",
+    "type": "Jeans",
     "brand": "Calvin Klein",
     "color": "Grey",
     "size": ["S", "M", "L", "XL"],
@@ -87,7 +87,7 @@
   {
     "link":
       "https://www.galerieslafayette.com/p/jeans+calvin+klein+skinny+fit-calvin+klein/50068254/230",
-    "type": "Jean",
+    "type": "Jeans",
     "brand": "Calvin Klein",
     "color": "Grey",
     "size": ["S", "M", "L"],
@@ -99,7 +99,7 @@
   },
   {
     "link": "https://www.galerieslafayette.com/p/jeans+levi+s+511+slim+fit-levi+s/40860881/244",
-    "type": "Jean",
+    "type": "Jeans",
     "brand": "Levis",
     "color": "Dark Grey",
     "size": ["S", "M", "L", "XL"],
@@ -111,7 +111,7 @@
   },
   {
     "link": "https://www.galerieslafayette.com/p/jeans+levi+s+510+skinny+fit-levi+s/27486441/244",
-    "type": "Jean",
+    "type": "Jeans",
     "brand": "Levis",
     "color": "Dark Grey",
     "size": ["S", "M", "L", "XL"],

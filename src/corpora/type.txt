@@ -1,2 +1,2 @@
 Polo,polos
-Jean,jeans
+Jeans,jeans,jean
