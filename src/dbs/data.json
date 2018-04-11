@@ -2,7 +2,7 @@
   {
     "link": "",
     "type": "Polo",
-    "brand": "Polo Raph Laurent",
+    "brand": "Polo Ralph Lauren",
     "color": "White",
     "size": ["S", "M", "L", "XL", "XXL"],
     "price": 65,
@@ -50,7 +50,7 @@
   {
     "link": "",
     "type": "Polo",
-    "brand": "Polo Raph Laurent",
+    "brand": "Polo Ralph Lauren",
     "color": "White",
     "size": ["S", "M", "L", "XL"],
     "price": 115,
@@ -62,7 +62,7 @@
   {
     "link": "",
     "type": "Polo",
-    "brand": "Polo Raph Laurent",
+    "brand": "Polo Ralph Lauren",
     "color": "Red",
     "size": ["M", "L", "XL", "XXL"],
     "price": 115,
