@@ -18,8 +18,8 @@ const questions = {
 const getBotResponse = (facet, valueCounts) => {
   let facetValues = [];
   if (facet === 'size') {
-    // size value is array
-    const array = valueCounts.map(o => o.value.substring(1, o.value.length - 1).split(','));
+    // size value is array like 'S,M,L'
+    const array = valueCounts.map(o => o.value.split(','));
     facetValues = _.union(...array);
   } else {
     facetValues = valueCounts.map(o => o.value);
@@ -34,7 +34,7 @@ const articleHtml = (data) => {
   html += `<div><strong>${data.brand}</strong> <strong style="float:right">${
     data.price
   } €</strong></div>`;
-  html += `<div>${data.size.substring(1, data.size.length - 1)}</div>`;
+  html += `<div>${data.size}</div>`;
   if (data.cut) {
     html += `<div>${data.cut}</div>`;
   }
