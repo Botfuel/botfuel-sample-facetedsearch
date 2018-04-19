@@ -47,23 +47,22 @@ const articleHtml = (data) => {
 };
 
 class ArticleView extends SearchView {
-  renderEntities(matchedEntities, missingEntities, extraData) {
+  render(userMessage, {matchedEntities, missingEntities, data, facetValueCounts}) {
     logger.debug('renderEntities', {
       matchedEntities,
-      missingEntities,
-      extraData,
-    });
+      missingEntities
+        });
 
     if (missingEntities.size !== 0) {
-      return getBotResponse(missingEntities.keys().next().value, extraData.facetValueCounts);
+      return getBotResponse(missingEntities.keys().next().value, facetValueCounts);
     }
 
     const messages = [];
-    if (extraData.data && extraData.data.length > 0) {
-      messages.push(new BotTextMessage(`Thank you. We have ${extraData.data.length} product${
-        extraData.data.length > 1 ? 's' : ''
+    if (data && data.length > 0) {
+      messages.push(new BotTextMessage(`Thank you. We have ${data.length} product${
+        data.length > 1 ? 's' : ''
       }:`));
-      _.forEach(extraData.data, (data) => {
+      _.forEach(data, (data) => {
         messages.push(new BotTextMessage(articleHtml(data)));
       });
     } else {
