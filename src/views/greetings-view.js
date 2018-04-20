@@ -1,11 +1,12 @@
-const { TextView } = require('botfuel-dialog');
+const { View, BotTextMessage } = require('botfuel-dialog');
 
-class GreetingsView extends TextView {
-  getTexts(userMessage, { extraData }) {
-    if (extraData.greeted) {
-      return ['Hi again!'];
+class GreetingsView extends View {
+  render(userMessage, data ) {
+    const { greeted } = data;
+    if (greeted) {
+      return [new BotTextMessage('Hi again!')];
     }
-    return ['Hello!'];
+    return [new BotTextMessage('Hello!')];
   }
 }
 

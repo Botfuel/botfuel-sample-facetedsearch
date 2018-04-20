@@ -1,20 +1,20 @@
-const { TextDialog, Logger } = require('botfuel-dialog');
+const { BaseDialog, Logger } = require('botfuel-dialog');
 
 const logger = Logger('Greetings');
 
-class Greetings extends TextDialog {
+class Greetings extends BaseDialog {
   async dialogWillDisplay(userMessage) {
     logger.debug('Greetings dialog being called');
     const userId = userMessage.user;
-    const greetings = (await this.brain.userGet(userId, 'greetings')) || {
+    const { greeted } = (await this.brain.userGet(userId, 'greetings')) || {
       greeted: false,
     };
 
-    if (!greetings.greeted) {
+    if (!greeted) {
       await this.brain.userSet(userId, 'greetings', { greeted: true });
     }
 
-    return greetings;
+    return { greeted };
   }
 
   async dialogWillComplete() {
