@@ -51,9 +51,8 @@ class ArticleView extends SearchView {
     userMessage,
     { matchedEntities, missingEntities, data, facetValueCounts },
   ) {
-    logger.debug('renderEntities', {
-      matchedEntities,
-      missingEntities,
+    logger.debug('render', {
+      matchedEntities, missingEntities, data, facetValueCounts,
     });
 
     if (missingEntities.size !== 0) {
