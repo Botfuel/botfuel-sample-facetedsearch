@@ -47,11 +47,13 @@ const articleHtml = (data) => {
 };
 
 class ArticleView extends SearchView {
-  render(userMessage, {matchedEntities, missingEntities, data, facetValueCounts}) {
-    logger.debug('renderEntities', {
-      matchedEntities,
-      missingEntities
-        });
+  render(
+    userMessage,
+    { matchedEntities, missingEntities, data, facetValueCounts },
+  ) {
+    logger.debug('render', {
+      matchedEntities, missingEntities, data, facetValueCounts,
+    });
 
     if (missingEntities.size !== 0) {
       return getBotResponse(missingEntities.keys().next().value, facetValueCounts);
@@ -62,8 +64,8 @@ class ArticleView extends SearchView {
       messages.push(new BotTextMessage(`Thank you. We have ${data.length} product${
         data.length > 1 ? 's' : ''
       }:`));
-      _.forEach(data, (data) => {
-        messages.push(new BotTextMessage(articleHtml(data)));
+      _.forEach(data, (d) => {
+        messages.push(new BotTextMessage(articleHtml(d)));
       });
     } else {
       messages.push(new BotTextMessage("Sorry we don't find any result!"));

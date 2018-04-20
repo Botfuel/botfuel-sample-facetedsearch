@@ -8,6 +8,7 @@
   "parser": "babel-eslint",
   "rules": {
     "class-methods-use-this": "off",
+    "object-curly-newline": ["error", { "consistent": true}],
     "require-jsdoc": 0
   }
 }
