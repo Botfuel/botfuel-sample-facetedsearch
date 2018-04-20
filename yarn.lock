@@ -572,9 +572,9 @@ botfuel-dialog@^7.0.0:
     valid-url "^1.0.9"
     winston "^2.4.0"
 
-botfuel-module-facetedsearch@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/botfuel-module-facetedsearch/-/botfuel-module-facetedsearch-1.0.0.tgz#55e73e1b2e296eb4e46a069701b6f3471a07701c"
+botfuel-module-facetedsearch@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/botfuel-module-facetedsearch/-/botfuel-module-facetedsearch-3.0.1.tgz#7204a38f72ef1919576aa8524666b7b76ff39b2c"
   dependencies:
     lodash "^4.17.5"
 
