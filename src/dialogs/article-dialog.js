@@ -18,8 +18,8 @@ ArticleDialog.params = {
       dim: 'size',
       priority: 5,
     },
-    sleave: {
-      dim: 'sleave',
+    sleeve: {
+      dim: 'sleeve',
     },
     color: {
       dim: 'color',

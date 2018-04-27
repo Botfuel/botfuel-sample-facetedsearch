@@ -8,7 +8,7 @@
     "price": 65,
     "cut": "Slim",
     "material": "",
-    "sleave": "Long",
+    "sleeve": "Long",
     "image": "G_48929177_85_ZP_1.jpg"
   },
   {
@@ -20,7 +20,7 @@
     "price": 95,
     "cut": "Straight",
     "material": "",
-    "sleave": "Short",
+    "sleeve": "Short",
     "image": "G_80704372_401_ZP_1.jpg"
   },
   {
@@ -32,7 +32,7 @@
     "price": 100,
     "cut": "Slim",
     "material": "",
-    "sleave": "Short",
+    "sleeve": "Short",
     "image": "G_49796223_85_ZP_1.jpg"
   },
   {
@@ -44,7 +44,7 @@
     "price": 79,
     "cut": "Straight",
     "material": "",
-    "sleave": "Short",
+    "sleeve": "Short",
     "image": "G_49796262_401_ZP_1.jpg"
   },
   {
@@ -56,7 +56,7 @@
     "price": 115,
     "cut": "Straight",
     "material": "",
-    "sleave": "Short",
+    "sleeve": "Short",
     "image": "G_49889613_85_ZP_1.jpg"
   },
   {
@@ -68,7 +68,7 @@
     "price": 115,
     "cut": "Straight",
     "material": "",
-    "sleave": "Short",
+    "sleeve": "Short",
     "image": "G_49890829_401_ZP_1.jpg"
   },
   {
@@ -81,7 +81,7 @@
     "price": 99,
     "cut": "Slim",
     "material": "Denim",
-    "sleave": "",
+    "sleeve": "",
     "image": "G_46466745_230_ZP_2.jpg"
   },
   {
@@ -94,11 +94,12 @@
     "price": 119,
     "cut": "Skinny",
     "material": "Cotton",
-    "sleave": "",
+    "sleeve": "",
     "image": "G_50068254_230_ZP_1.jpg"
   },
   {
-    "link": "https://www.galerieslafayette.com/p/jeans+levi+s+511+slim+fit-levi+s/40860881/244",
+    "link":
+      "https://www.galerieslafayette.com/p/jeans+levi+s+511+slim+fit-levi+s/40860881/244",
     "type": "Jeans",
     "brand": "Levis",
     "color": "Dark Grey",
@@ -106,11 +107,12 @@
     "price": 109,
     "cut": "Slim",
     "material": "Cotton",
-    "sleave": "",
+    "sleeve": "",
     "image": "G_40860881_244_ZP_1.jpg"
   },
   {
-    "link": "https://www.galerieslafayette.com/p/jeans+levi+s+510+skinny+fit-levi+s/27486441/244",
+    "link":
+      "https://www.galerieslafayette.com/p/jeans+levi+s+510+skinny+fit-levi+s/27486441/244",
     "type": "Jeans",
     "brand": "Levis",
     "color": "Dark Grey",
@@ -118,7 +120,7 @@
     "price": 99,
     "cut": "Skinny",
     "material": "Cotton",
-    "sleave": "",
+    "sleeve": "",
     "image": "G_27486441_244_ZP_1.jpg"
   }
 ]

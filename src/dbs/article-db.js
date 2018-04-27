@@ -12,9 +12,11 @@ const metaData = {
     type: PlainFacetDb.EQUAL,
     brand: PlainFacetDb.EQUAL,
     color: (value, param) =>
-      param && colorMap[value] && colorMap[value].toLowerCase() === param.toLowerCase(),
+      param &&
+      colorMap[value] &&
+      colorMap[value].toLowerCase() === param.toLowerCase(),
     size: PlainFacetDb.IN,
-    sleave: PlainFacetDb.EQUAL,
+    sleeve: PlainFacetDb.EQUAL,
     form: PlainFacetDb.EQUAL,
   }),
   done: hits => hits && hits.length <= 2,

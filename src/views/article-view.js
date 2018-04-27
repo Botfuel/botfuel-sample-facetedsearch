@@ -1,7 +1,5 @@
 const _ = require('lodash');
-const {
-  BotTextMessage, Logger, QuickrepliesMessage, WebAdapter,
-} = require('botfuel-dialog');
+const { BotTextMessage, Logger, QuickrepliesMessage, WebAdapter } = require('botfuel-dialog');
 const { SearchView } = require('botfuel-module-facetedsearch');
 
 const logger = Logger('ArticleView');
@@ -12,7 +10,7 @@ const questions = {
   color: 'What color do you like?',
   size: 'What is your size?',
   form: 'Which form do you like?',
-  sleave: 'What about sleave?',
+  sleeve: 'What about sleeves?',
 };
 
 const getBotResponse = (facet, valueCounts) => {
@@ -47,12 +45,12 @@ const articleHtml = (data) => {
 };
 
 class ArticleView extends SearchView {
-  render(
-    userMessage,
-    { matchedEntities, missingEntities, data, facetValueCounts },
-  ) {
+  render(userMessage, { matchedEntities, missingEntities, data, facetValueCounts }) {
     logger.debug('render', {
-      matchedEntities, missingEntities, data, facetValueCounts,
+      matchedEntities,
+      missingEntities,
+      data,
+      facetValueCounts,
     });
 
     if (missingEntities.size !== 0) {
@@ -61,9 +59,7 @@ class ArticleView extends SearchView {
 
     const messages = [];
     if (data && data.length > 0) {
-      messages.push(new BotTextMessage(`Thank you. We have ${data.length} product${
-        data.length > 1 ? 's' : ''
-      }:`));
+      messages.push(new BotTextMessage(`Thank you. We have ${data.length} product${data.length > 1 ? 's' : ''}:`));
       _.forEach(data, (d) => {
         messages.push(new BotTextMessage(articleHtml(d)));
       });
