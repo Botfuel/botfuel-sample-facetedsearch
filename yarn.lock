@@ -546,9 +546,9 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-botfuel-dialog@^7.0.0:
-  version "7.0.0"
-  resolved "https://registry.yarnpkg.com/botfuel-dialog/-/botfuel-dialog-7.0.0.tgz#8dcee656730bb4bf6751d52dac3d65aff788e577"
+botfuel-dialog@^7.2.1:
+  version "7.2.1"
+  resolved "https://registry.yarnpkg.com/botfuel-dialog/-/botfuel-dialog-7.2.1.tgz#c5b68747d4597acbf07ce839448cf76ab9b03785"
   dependencies:
     babel-polyfill "^6.26.0"
     body-parser "^1.18.1"
