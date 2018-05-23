@@ -2,6 +2,20 @@
 
 This sample bot is used in the [**FacetedSearch demo**](https://docs.botfuel.io/dialog/demos/faceted-search).
 
+## Create an app
+
+* Create a new app on Botfuel Trainer (https://app.botfuel.io). See the [Getting Started tutorial](https://docs.botfuel.io/platform/tutorials/getting-started) for how to create a new app.
+
+* Add an intent with lable `article` with the following training phrases for examples:
+
+  * I want to buy a pair of jeans
+  * I want to buy a shirt
+  * I want to buy some polos
+
+* Add an intent with lable `greetings` with the following training phrases for examples:
+  * Hi
+  * Hello
+
 ## How to run the bot
 
 Clone the repository:
@@ -36,8 +50,8 @@ Try typing `Hello` and `I want to buy a polo`
 
 ## Need help?
 
-* See [**Getting Started**](https://docs.botfuel.io/dialog/tutorials/getting-started) to learn how to run a bot in minutes.
-* See [**Concepts**](https://docs.botfuel.io/dialog/concepts) for explanations about the internals of the SDK.
+* See [**Getting Started**](https://docs.botfuel.io/platform/tutorials/getting-started) to learn how to run a bot in minutes.
+* See [**Concepts**](https://docs.botfuel.io/platform/concepts) for explanations about the internals of the SDK.
 
 ## License
 
