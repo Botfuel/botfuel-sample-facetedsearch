@@ -16,7 +16,7 @@ This sample bot is used in the [**FacetedSearch demo**](https://docs.botfuel.io/
   * Hi
   * Hello
 
-You can get examples of intents here : https://github.com/Botfuel/botfuel-sample-facetedsearch/intents.xlsx
+You can get examples of intents here : https://github.com/Botfuel/botfuel-sample-facetedsearch/blob/master/intents.xlsx
 
 ## How to run the bot
 
