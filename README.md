@@ -1,6 +1,6 @@
 # Sample bot used in the [FacetedSearch module](https://docs.botfuel.io/dialog/modules/faceted-search)
 
-This sample bot is used in the [**FacetedSearch demo**](https://docs.botfuel.io/dialog/demos/faceted-search).
+This sample bot is used in the [**FacetedSearch demo**](https://docs.botfuel.io/platform/demos/faceted-search).
 
 ## Create an app
 
