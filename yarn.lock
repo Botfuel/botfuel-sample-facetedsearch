@@ -536,9 +536,9 @@ boom@5.x.x:
   dependencies:
     hoek "4.x.x"
 
-botfuel-dialog@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/botfuel-dialog/-/botfuel-dialog-9.0.0.tgz#676efbeb76fd3d515b01029a460a533461c94936"
+botfuel-dialog@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/botfuel-dialog/-/botfuel-dialog-11.1.0.tgz#72baeb6b4f387329841bb682709002ceb30f5c63"
   dependencies:
     babel-polyfill "^6.26.0"
     body-parser "^1.18.1"
@@ -560,9 +560,9 @@ botfuel-dialog@^9.0.0:
     valid-url "^1.0.9"
     winston "^2.4.0"
 
-botfuel-module-facetedsearch@^3.0.1:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/botfuel-module-facetedsearch/-/botfuel-module-facetedsearch-3.0.1.tgz#7204a38f72ef1919576aa8524666b7b76ff39b2c"
+botfuel-module-facetedsearch@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/botfuel-module-facetedsearch/-/botfuel-module-facetedsearch-3.1.0.tgz#5e9d70a1cb08a5869e6a61604e89da61b1518fe1"
   dependencies:
     lodash "^4.17.5"
 
