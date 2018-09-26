@@ -12,7 +12,7 @@
     "test": "jest"
   },
   "dependencies": {
-    "botfuel-dialog": "^11.1.0",
+    "botfuel-dialog": "^11.0.0",
     "botfuel-module-facetedsearch": "^3.1.0",
     "lodash": "^4.17.5",
     "logtown-winston": "^1.0.0",
