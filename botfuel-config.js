@@ -6,5 +6,4 @@ module.exports = {
     name: 'memory',
   },
   modules: ['botfuel-module-facetedsearch'],
-  path: __dirname,
 };
